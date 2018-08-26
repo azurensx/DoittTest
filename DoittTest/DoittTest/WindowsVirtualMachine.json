@@ -10,7 +10,7 @@
       }
     },
     "adminPassword": {
-      "type": "securestring",
+      "type": "Net12345$",
       "metadata": {
         "description": "Password for the Virtual Machine."
       }
@@ -47,9 +47,9 @@
     "publicIPAddressName": "myPublicIP",
     "publicIPAddressType": "Dynamic",
     "vhdStorageContainerName": "vhds",
-    "vmName": "MyWindowsVM",
+    "vmName": "TestDOIITVM",
     "vmSize": "Standard_A2",
-    "virtualNetworkName": "MyVNET",
+    "virtualNetworkName": "TESTVNET",
     "vnetId": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
     "vhdStorageAccountName": "[concat('vhdstorage', uniqueString(resourceGroup().id))]",
